@@ -1,0 +1,45 @@
+@import "./varsAndFonts.scss";
+
+%authorization-elements {
+  font-size: 1rem;
+  color: $secondary-color;
+  font-weight: 700;
+  margin-top: 17%;
+}
+
+%hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1.15rem;
+  transition: $transition;
+}
+
+.header {
+  width: 100%;
+  min-height: 80px;
+  background-color: $primary-color;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 6fr 1fr 1fr;
+  &_title h1 {
+    font-size: 2.1rem;
+    text-align: center;
+    text-wrap: nowrap;
+    color: $secondary-color;
+    margin-top: 1.7%;
+    margin-left: 150px;
+  }
+  &_logIn p {
+    @extend %authorization-elements;
+    margin-left: 45px;
+  }
+  &_logIn p:hover {
+    @extend %hover;
+  }
+  &_signUp p {
+    @extend %authorization-elements;
+  }
+  &_signUp p:hover {
+    @extend %hover;
+  }
+}

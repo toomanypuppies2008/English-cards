@@ -1,0 +1,19 @@
+$primary-color: #3b9d8a;
+$secondary-color: #a45d11;
+
+$primary-light-color: rgba($primary-color, 0.38);
+$secondary-light-color: rgba($secondary-color, 0.38);
+$secondary-dark-color: #854500;
+
+$font-primary: "MyCustomFont", sans-serif;
+
+$transition: all 0.2s ease-in-out;
+$shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+$radius: 10px;
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../assets/fonts/DuruSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}

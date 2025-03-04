@@ -1,0 +1,68 @@
+@import "./varsAndFonts.scss";
+
+%btn-base {
+  border: none;
+  border-radius: $radius;
+  padding: 8px 22px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition;
+  position: relative;
+  overflow: hidden;
+  font-family: $font-primary;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:focus {
+    outline: 1px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+.editButton {
+  @extend %btn-base;
+  background: $primary-light-color;
+  color: #025746;
+
+  &:hover {
+    background: $primary-color;
+  }
+}
+
+.deleteButton {
+  @extend %btn-base;
+  background: #da7382;
+  color: #6a0c0c;
+
+  &:hover {
+    background: #b6414d;
+  }
+}
+
+.saveButton {
+  @extend %btn-base;
+  background: #67a66d;
+  color: #052f08;
+
+  &:hover {
+    background: #3ba23d;
+  }
+}
+
+.cancelButton {
+  @extend %btn-base;
+  background: #928e8e;
+  color: #2c2a2a;
+
+  &:hover {
+    background: #625f5f;
+  }
+}

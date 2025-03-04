@@ -1,0 +1,9 @@
+@import "./varsAndFonts.scss";
+
+.main {
+  width: 100vw;
+  height: fit-content;
+  background-color: $secondary-light-color;
+  display: flex;
+  flex-direction: column;
+}
