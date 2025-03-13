@@ -1,0 +1,47 @@
+@import "../sharedStyles/varsAndFonts.scss";
+@import "../Buttons/buttons.scss";
+
+.card {
+  width: 300px;
+  height: 375px;
+  border: 3px double $primary-color;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+  color: $secondary-dark-color;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.checkTranslation {
+  @extend %btn-base;
+  background: $primary-light-color;
+  color: #045d4b;
+
+  &:hover {
+    background: $primary-color;
+    font-size: medium;
+  }
+}
+
+.cardTranscription {
+  font-size: 1.4rem;
+}
+
+.hideTranslation {
+  @extend %btn-base;
+  background: #da7382;
+  color: #6a0c0c;
+
+  &:hover {
+    background: #b6414d;
+  }
+}
+
+.translation {
+  font-size: 1.1rem;
+  text-align: center;
+}

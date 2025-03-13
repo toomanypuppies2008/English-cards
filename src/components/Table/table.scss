@@ -1,6 +1,6 @@
-@import "./varsAndFonts.scss";
+@import "../sharedStyles/varsAndFonts.scss";
 
-.main {
+.table {
   width: 100vw;
   height: fit-content;
   background-color: $secondary-light-color;
