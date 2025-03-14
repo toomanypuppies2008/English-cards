@@ -7,18 +7,8 @@ export default function Card({ english, transcription, russian }) {
 
   const [isTranslation, setTranslation] = useState(false);
 
-  !isTranslation
+  isTranslation
     ? (divShown = (
-        <button
-          className="checkTranslation"
-          onClick={() => {
-            setTranslation(true);
-          }}
-        >
-          Проверить
-        </button>
-      ))
-    : (divShown = (
         <>
           <p className="translation">{russian}</p>
           <button
@@ -30,6 +20,16 @@ export default function Card({ english, transcription, russian }) {
             Скрыть перевод
           </button>
         </>
+      ))
+    : (divShown = (
+        <button
+          className="checkTranslation"
+          onClick={() => {
+            setTranslation(true);
+          }}
+        >
+          Проверить
+        </button>
       ));
 
   return (
