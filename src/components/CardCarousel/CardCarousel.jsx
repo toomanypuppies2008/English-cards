@@ -40,6 +40,9 @@ export default function CardCarousel() {
           </button>
         </div>
       </div>
+      <p className="counter">
+        {index + 1}/{data.length}
+      </p>
     </div>
   );
 }
