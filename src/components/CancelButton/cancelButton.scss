@@ -1,0 +1,11 @@
+@import "../../template";
+
+.cancelButton {
+  @extend %btn-base;
+  background: #928e8e;
+  color: #2c2a2a;
+
+  &:hover {
+    background: #625f5f;
+  }
+}

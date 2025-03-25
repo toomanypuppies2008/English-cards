@@ -1,4 +1,4 @@
-import "./buttons.scss";
+import "./cancelButton.scss";
 
 export default function CancelButton({ onClick }) {
   return (

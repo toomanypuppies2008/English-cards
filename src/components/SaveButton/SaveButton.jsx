@@ -1,4 +1,4 @@
-import "./buttons.scss";
+import "./saveButton.scss";
 
 export default function SaveButton({ onClick }) {
   return (

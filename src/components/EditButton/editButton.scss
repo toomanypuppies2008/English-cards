@@ -1,0 +1,11 @@
+@import "../../template";
+
+.editButton {
+  @extend %btn-base;
+  background: $primary-light-color;
+  color: #025746;
+
+  &:hover {
+    background: $primary-color;
+  }
+}

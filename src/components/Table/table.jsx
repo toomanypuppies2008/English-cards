@@ -1,7 +1,7 @@
 import "../Table/table.scss";
 import data from "../../data/data.json";
 import { useState } from "react";
-import TableElement from "../TableElement/tableElement";
+import TableElement from "../TableElement/TableElement";
 
 export default function Table() {
   const [items, setItems] = useState(data);

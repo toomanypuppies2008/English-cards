@@ -1,0 +1,11 @@
+@import "../../template";
+
+.saveButton {
+  @extend %btn-base;
+  background: #67a66d;
+  color: #052f08;
+
+  &:hover {
+    background: #3ba23d;
+  }
+}

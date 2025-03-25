@@ -1,4 +1,4 @@
-import "./buttons.scss";
+import "./deleteButton.scss";
 
 export default function DeleteButton({ onClick }) {
   return (

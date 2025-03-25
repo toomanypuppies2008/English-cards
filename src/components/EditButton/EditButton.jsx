@@ -1,4 +1,4 @@
-import "./buttons.scss";
+import "./editButton.scss";
 
 export default function EditButton({ onClick }) {
   return (

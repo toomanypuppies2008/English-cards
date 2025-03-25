@@ -1,0 +1,45 @@
+@import "../../template";
+
+.mainContainer {
+  width: 100vw;
+  height: 65vh;
+  background-color: $secondary-light-color;
+}
+
+.carouselContainer {
+  margin-top: 2%;
+  margin: 0 auto;
+  width: 38vw;
+  height: 58vh;
+  max-height: 420px;
+  display: grid;
+  grid-template-columns: 0.4fr 1.2fr 0.4fr;
+  grid-template-rows: 1fr;
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselButton {
+  @extend %btn-base;
+  background: $primary-color;
+  color: $secondary-dark-color;
+
+  &:hover {
+    background: rgb(45, 141, 130);
+  }
+}
+
+.hiddenButton {
+  display: none;
+}
+
+.cardBlock {
+  * {
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+}

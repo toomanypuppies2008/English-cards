@@ -1,10 +1,9 @@
 import { useState } from "react";
 import "../TableElement/tableElement.scss";
-import "../TableElement/edit-inputs.scss";
-import SaveButton from "../Buttons/saveButton";
-import CancelButton from "../Buttons/cancelButton";
-import EditButton from "../Buttons/editButton";
-import DeleteButton from "../Buttons/deleteButton";
+import SaveButton from "../SaveButton/SaveButton";
+import CancelButton from "../CancelButton/CancelButton";
+import EditButton from "../EditButton/EditButton";
+import DeleteButton from "../DeleteButton/DeleteButton";
 
 export default function TableElement({
   english,

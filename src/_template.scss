@@ -3,6 +3,7 @@ $secondary-color: #a45d11;
 
 $primary-light-color: rgba($primary-color, 0.38);
 $secondary-light-color: rgba($secondary-color, 0.38);
+$primary-dark-color: darken($primary-color, 20%);
 $secondary-dark-color: #854500;
 
 $font-primary: "MyCustomFont", sans-serif;
@@ -16,4 +17,26 @@ $radius: 10px;
   src: url("../assets/fonts/DuruSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+}
+
+%btn-base {
+  border: none;
+  border-radius: $radius;
+  padding: 8px 22px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition;
+  position: relative;
+  overflow: hidden;
+  font-family: $font-primary;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
 }

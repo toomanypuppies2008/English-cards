@@ -1,7 +1,7 @@
-@import "../sharedStyles/varsAndFonts.scss";
-@import "../Buttons/buttons.scss";
+@import "../../template";
 
 .card {
+  position: relative;
   width: 300px;
   height: 375px;
   border: 3px double $primary-color;
@@ -23,7 +23,6 @@
 
   &:hover {
     background: $primary-color;
-    font-size: medium;
   }
 }
 
@@ -42,6 +41,9 @@
 }
 
 .translation {
+  position: absolute;
+  top: 65%;
   font-size: 1.1rem;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }

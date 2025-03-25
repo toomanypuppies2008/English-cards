@@ -1,4 +1,3 @@
-import "../Buttons/buttons.scss";
 import "../Card/card.scss";
 import { useState } from "react";
 
