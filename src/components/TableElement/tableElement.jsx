@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../TableElement/tableElement.scss";
+import "./TableElement.scss";
 import SaveButton from "../SaveButton/SaveButton";
 import CancelButton from "../CancelButton/CancelButton";
 import EditButton from "../EditButton/EditButton";

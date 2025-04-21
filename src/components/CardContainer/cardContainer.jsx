@@ -1,6 +1,6 @@
 import data from "../../data/data.json";
 import Card from "../Card/Card";
-import "../CardContainer/cardContainer.scss";
+import "./CardContainer.scss";
 
 export default function CardContainer() {
   return (

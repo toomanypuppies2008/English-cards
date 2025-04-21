@@ -2,49 +2,55 @@
 
 .mainContainer {
   width: 100vw;
-  height: 65vh;
+  height: 67vh;
   background-color: $secondary-light-color;
-}
 
-.carouselContainer {
-  margin-top: 2%;
-  margin: 0 auto;
-  width: 38vw;
-  height: 58vh;
-  max-height: 420px;
-  display: grid;
-  grid-template-columns: 0.4fr 1.2fr 0.4fr;
-  grid-template-rows: 1fr;
-}
-
-.buttonsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carouselButton {
-  @extend %btn-base;
-  background: $primary-color;
-  color: $secondary-dark-color;
-
-  &:hover {
-    background: rgb(45, 141, 130);
-  }
-}
-
-.hiddenButton {
-  display: none;
-}
-
-.cardBlock {
-  * {
+  .carouselContainer {
     margin: 0 auto;
-    margin-top: 22px;
-  }
-}
+    padding-top: 45px;
+    width: 38vw;
+    height: 58vh;
+    max-height: 420px;
+    display: grid;
+    grid-template-columns: 0.4fr 1.2fr 0.4fr;
+    grid-template-rows: 1fr 0.2fr;
 
-.counter {
-  text-align: center;
-  color: $secondary-dark-color;
+    .buttonsContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      width: 120px;
+      height: 100%;
+      padding: 0;
+
+      .carouselButton {
+        @extend %btn-base;
+        background: $primary-color;
+        color: $secondary-dark-color;
+        min-width: 95px;
+        white-space: nowrap;
+
+        &:hover {
+          background: rgb(45, 141, 130);
+        }
+      }
+
+      .hiddenButton {
+        display: none;
+      }
+    }
+
+    .cardBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .counter {
+      grid-column: span 3;
+      text-align: center;
+      color: $secondary-dark-color;
+    }
+  }
 }

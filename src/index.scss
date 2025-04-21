@@ -5,3 +5,23 @@ body {
   overflow-x: hidden;
   font-family: $font-primary;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary-light-color;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary-dark-color;
+}
+
+/* Для Firefox */
+html {
+  scrollbar-color: $secondary-light-color transparent;
+  scrollbar-width: thin;
+}

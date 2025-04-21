@@ -1,4 +1,4 @@
-import "../Card/card.scss";
+import "./Card.scss";
 import { useState } from "react";
 
 export default function Card({ english, transcription, russian }) {

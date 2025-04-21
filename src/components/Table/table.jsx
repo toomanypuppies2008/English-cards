@@ -1,4 +1,4 @@
-import "../Table/table.scss";
+import "./Table.scss";
 import data from "../../data/data.json";
 import { useState } from "react";
 import TableElement from "../TableElement/TableElement";
